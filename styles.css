@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+   
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+   
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    
+    
+}
+.logo{
+  flex-basis: 20%;  
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-links ul :hover{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    border-bottom: solid black 1px;
+}
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 1000px; ;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #ccc;
+    transform: rotate(0deg);
+    transition: 1s;
+
+}
+.features img{
+    width: 70px;
+}
+.features{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.features div{
+    margin-left: 30px;
+}
+.features div p{
+    margin-top: 8px;
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+.two{
+    top: 150px; ;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+.picture{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    margin: 15px 0;
+    color: #fff; 
+}
+#upBtn{
+    width: 25px;
+    cursor: pointer;
+}
+#downBtn{
+    width: 25px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid red;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+/*contact Part*/
+
+.contact
+{
+    margin: 0;
+    padding: 0;
+    background-color: #778899;
+    background: cornflowerblue;
+    background
+}
+.contact .content
+{
+    max-width: 800px: ;
+    text-align:left;
+}
+.contact .content h2
+{
+    font-size: 26px;
+    font-weight: 500;
+    color: 	#202124;
+}
+.contact .content p
+{
+    font-weight: 200;
+    color: #202124;
+}
+.container
+{
+    width: 100%;
+    align-items:initial;
+    margin-top: 10px;
+    display: grid;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: grid;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: auto;
+}
+.container .contactInfo .box .icon
+{
+    height: 15px
+}
+.container .contactInfo .box .text
+{
+    display: grid;
+    margin: auto;
+    font-size: 20px;
+    flex-direction: #202124;
+    font-weight: 200;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 200;
+    color: #778899;
+}
+.contactForm
+{
+    width: 100%;
+    padding: 20px;
+    font-weight: 200;
+    background: #778899;
+    background-color: cornflowerblue;
+}
+.contactForm h2
+{
+    width: 100%;
+    margin: auto;
+    position: initial;
+}
+.contactForm .inputbox
+{
+    position: initial;
+    width: 100%;
+    margin: 10px;
+}
+.contactForm .inputbox input
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm .inputbox input textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm .inputbox span
+{
+    position: absolute;
+    right: 0;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #333;
+}
+.contactForm .inputbox input:focus ~ span
+{
+    font-size: 8px;
+    color:#e91e63 ;
+    transform: translateY(-20px);
+
+    
+}
+.contactForm .inputbox input:valid ~ span
+{
+    font-size: 8px;
+    color:#e91e63 ;
+    transform: translateY(-20px);
+}
+.contactForm .inputbox textarea:focus ~ span
+{
+    font-size: 8px;
+    color:#e91e63 ;
+    transform: translateY(-20px);
+}
+.contactForm .inputbox textarea:valid ~ span
+{
+    font-size: 8px;
+    color:#e91e63 ;
+    transform: translateY(-20px);
+}
+.contactForm .inputbox input[type="submit"]
+{
+    width: 100px;
+    background:#e91e63 ;
+    color:#9c27b0 ;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 8px;
+}
